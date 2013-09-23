@@ -1,0 +1,148 @@
+/* @override 
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/layout.css?G
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/layout.css?z
+*/
+
+/* $Id: layout-fixed.css,v 1.5.2.3 2009/02/13 19:20:19 johnalbin Exp $ */
+
+/*
+ * LAYOUT STYLES
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/** body **/
+
+	* { font-size: 1em; }
+	
+	#page, #closure-blocks {
+    	/*
+    	 * If you want to make the page a fixed width and centered in the viewport,
+    	 * this is the standards-compliant way to do that. See also the ie.css file
+    	 * for the necessary IE5 hack to center a div.
+    	 */
+    	margin: 2em auto 0 auto;
+    	width: 100em;
+  		}
+
+/** header **/
+  	#header { }
+  	#header-inner { }
+    #logo-title { }
+	#logo { float: left; }
+	#site-name { }
+	#site-slogan { }
+	#header-blocks { clear: both; /* Clear the logo */ }
+
+/** navbar **/
+  	#navbar {
+    	width: 100%;
+    	margin: 0;
+    	padding: 0; /* DO NOT CHANGE. Add padding or margin to #navbar-inner. */
+		}
+		
+  	#navbar ul { /* Primary and secondary links */
+    	margin: 0;
+    	padding: 0;
+    	text-align: left;
+  		}
+	
+	#navbar ul li {
+    	display: inline;
+    	padding: 0 1em 0 0;
+  		}
+
+/** main (container for everything else) **/
+
+/** content **/
+	#content,
+	.no-sidebars #content {
+	    width: 100em;
+	    margin-left: 0;
+	    margin-right: 0;
+	    padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+		}
+
+  	.sidebar-left #content {
+    	width: 81em;
+    	margin-left: 19em; /* The width of #sidebar-left. */
+	    margin-right: 0;
+		}
+
+  	.sidebar-right #content {
+    	width: 81em;
+    	margin-left: 0;
+    	margin-right: 19em; /* Negative value of #content's width + left margin. */
+  		}
+
+	.two-sidebars #content {
+    	width: 62em;
+    	margin-left: 19em; /* The width of #sidebar-left */
+    	margin-right: 19em; /* Negative value of #content's width + left margin. */
+  		}
+
+  	#content-inner {
+    	margin: 0;
+    	padding: 0;
+  		}
+
+/** sidebar-left **/
+  	#sidebar-left {
+    	float: left;
+    	width: 18em;
+    	margin: 0;
+    	padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
+  		}
+
+  	#sidebar-left-inner {
+    	margin: 0 2em 0 0;
+    	padding: 0;
+  		}
+
+/** sidebar-right **/
+  	#sidebar-right {
+   		float: right;
+    	width: 18em;
+    	margin: 0;
+    	padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+  		}
+
+  	#sidebar-right-inner {
+    	margin: 0 0 0 2em;
+    	padding: 0;
+  		}
+
+/** footer **/
+  	#footer { }
+	#footer-inner { }
+
+/** closure **/
+  	#closure-blocks { }
+  
+/** Prevent overflowing content **/
+  	#header,
+  	#content,
+  	#navbar,
+  	#sidebar-left,
+  	#sidebar-right,
+  	#footer,
+  	#closure-blocks {
+    	overflow: visible;
+    	word-wrap: break-word; /* A very nice CSS3 property */
+  		}
+
+  	#navbar {
+  		}
+
+/* edited from the original Zen theme by Kristian Bjørnard december 2009 */

@@ -1,0 +1,205 @@
+/* @override 
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/blts.css?G
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/blts.css?z
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/blts.css?V
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/blts.css?1
+	http://betterlivingthroughsustainability.com/sites/betterlivingthroughsustainability.com/themes/blts/blts.css?R
+*/
+
+/* =Global Style */
+	* { margin: 0; padding: 0; font-size: 1em; }
+	.left { float: left; }
+	.right { float: right; }
+	.clear { clear: both; }
+	
+/* =Main Layout Elements */
+	#header { clear: both; margin-top: 1em; }
+
+/* =Sidebar Craziness */
+	.sidebar-left #content { border-left: 1px solid rgb(110,119,134); }
+	.sidebar-left #content #content-inner { padding: 0 0 0 1em; }
+	.sidebar-right #content { border-right: 1px solid rgb(110,119,134); }
+	.sidebar-right #content #content-inner { padding:  0 1em 0 0; }
+	.two-sidebars #content {
+		border-left: 1px solid rgb(110,119,134);
+		border-right: 1px solid rgb(110,119,134);
+		}
+	.two-sidebars #content #content-inner { padding: 0 1em; }
+		
+/* =color and design elements */
+/*
+** 	PINK rgb(255,97,191)
+**	GRAY rgb(110,119,134)
+**	DK GRAY rgb(47,56,70)
+*/
+
+	body { background: black; margin-left: 2em !important;  margin-right: 2em !important; }
+	
+/* =Typography Stylings */
+	body {
+		font-size: .9em;
+		font-family:  Helvetica, Verdana, "Lucida Grande", Arial, sans-serif;;
+		color: rgb(110,119,134); 		
+		}
+		
+	h1, #site-name { font-size: 2.5em; }
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.25em; }
+	h4 { font-size: 1em; }
+	h5 { font-size: 1em; }
+	h6 { font-size: 1em; }
+	
+	h1,h2,h3,h4,h5,h6,.title,
+	h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.title a, #site-name a { 
+		color: rgb(255,97,191);
+		font-weight: normal;
+		letter-spacing: .1em;
+		text-decoration: none;
+		}
+
+	#mission p {
+		font-size: 2em;
+		line-height: 133%;
+		}	
+
+/* =LINKS */
+	a { color: rgb(47,56,70); text-decoration: none; }
+	a:link { :; }
+	a:visited { :; }
+	a:hover { :; }
+	a:focus { :; }
+	a:active { text-decoration: line-through; }
+	
+	ul.pager, ul.pager li, ul.pager li a { color: rgb(47,56,70); }
+	
+	#header #navbar #primary a.active {
+		background: rgb(110,119,134);
+		}
+	
+	#sidebar-left a,
+	#content p a {
+		background: rgb(0,120,96);
+		color: rgb(173,182,198);
+		}
+	#sidebar-left a { padding-right: .5em; }
+	
+/* =More specific style tweaks */
+/* =header areas */
+	#header {
+		}
+		
+	#logo-title {
+		clear: both;
+		}
+		
+	.not-front	#header {
+		margin: 0;
+		padding-bottom: 2em;
+		border-bottom: 4px double rgb(110,119,134);
+		}
+
+	#navbar {
+		display: block;
+		height: 3em;
+		border-bottom: 4px double rgb(110,119,134);
+		margin-bottom: 1.5em;
+		}
+
+	#navbar #search-box { float: right; }
+	#navbar #primary { }
+	
+	#mission { margin: 0; padding: 0; }
+	#mission p {
+		margin: 0;
+		padding-bottom: .7em;
+		border-bottom: 4px double rgb(110,119,134);
+		}
+
+/* =sidebar-left */
+	#sidebar-left { padding-top: 1em; margin-bottom: 2em; }
+	#sidebar-left h2.title { margin-bottom: .2em; }
+	#sidebar-left ul, #sidebar-left ul li {
+		list-style: none !important;
+		margin: 0;
+		padding: 0;
+		}
+		
+	#user-login-form {
+		text-align: left;
+		}
+			
+/* =sidebar-right */
+	#sidebar-right { padding-top: 1em; margin-bottom: 2em; }
+
+/* =content areas */
+	#content {
+		margin-top: 0 !important;
+		padding-top: 1em !important;
+		padding-bottom: 2em;
+		}
+	
+	#content div.node div.content {
+		margin-bottom: 1em;
+		border-bottom: 1px dashed rgb(110,119,134);
+		padding-bottom: .3em;
+		}	
+
+	#content div.node div.links {
+		margin-bottom: 1em;
+		}
+		
+	#content div.node div.links ul.links {
+		border-bottom: 1px dashed rgb(110,119,134);
+		padding-bottom: .5em;
+		}
+
+	.front #content div.node {
+		margin-bottom: 2em;
+		border-bottom: 1px dashed rgb(110,119,134);
+		padding-bottom: .3em;
+		}	
+
+	.front #content div.node div.content {
+		margin-bottom: 1em;
+		border-bottom: 0;
+		padding-bottom: .3em;
+		}
+		
+	.front #content div.node div.links ul.links {
+		border-top: 1px dashed rgb(110,119,134);
+		padding-top: .5em;
+		border-bottom: 0;
+		}	
+
+/* =footer areas */
+	#footer {
+		border-top: 4px double rgb(110,119,134);
+		border-bottom: 4px double rgb(110,119,134);
+		margin-bottom: 5em;
+		}
+
+/* Visual Studies */
+	.page-visualstudies #content div.view ul {
+	 	list-style: none;
+	 	margin: 0;
+	 	padding: 0;
+		}
+	.page-visualstudies #content div.view ul li {
+	 	display: inline;
+		}
+	.page-visualstudies ul li div a.thickbox {
+		float: left;
+		margin-bottom: 1.5em;
+		margin-right: 2em;
+		}
+
+/* Zen Clear Fixes */
+	.clear-block:after, .profile { clear: none; }
+	ul.tabs { display: block; height: 24px; margin-bottom: 20px;}	
+	
+/* DISPLAY: NONE */
+	#search-box label
+	{ display: none; }
+
+/* css coding by kristian bjornard */
+/* www.kristianbjornard.com */
